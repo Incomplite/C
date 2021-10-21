@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <list>
 #include <vector>
 using namespace std;
@@ -18,10 +18,10 @@ public:
 	Stock(string s, int i) {
 		companyName = s;
 		stockNum = i;
-		cout << "Ââåäèòå ñòîèìîñòü êàæäîé àêöèè: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÐºÐ°Ð¶Ð´Ð¾Ð¹ Ð°ÐºÑ†Ð¸Ð¸: " << endl;
 		for (int i = 0; i < stockNum; i++) {
 			int sCost;
-			cout << "	Àêöèÿ íîìåð " << i + 1 << " : ";
+			cout << "	ÐÐºÑ†Ð¸Ñ Ð½Ð¾Ð¼ÐµÑ€ " << i + 1 << " : ";
 			cin >> sCost;
 			stockCostArray.push_back(sCost);
 		}
@@ -30,7 +30,7 @@ public:
 		if (sNum > 0) {
 			float sCost;
 			for (int i = 0; i < sNum; i++) {
-				cout << "Öåíà ïðèîáðåòåííîé àêöèè ¹" << i + 1 << " : ";
+				cout << "Ð¦ÐµÐ½Ð° Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚ÐµÐ½Ð½Ð¾Ð¹ Ð°ÐºÑ†Ð¸Ð¸ â„–" << i + 1 << " : ";
 				cin >> sCost;
 				stockCostArray.push_back(sCost);
 				stockNum++;
@@ -43,7 +43,7 @@ public:
 		if (sNum > 0) {
 			int ndx;
 			for (int i = 0; i < sNum; i++) {
-				cout << "Íîìåð ïðîäàííîé àêöèè â ìàññèâå: ";
+				cout << "ÐÐ¾Ð¼ÐµÑ€ Ð¿Ñ€Ð¾Ð´Ð°Ð½Ð½Ð¾Ð¹ Ð°ÐºÑ†Ð¸Ð¸ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: ";
 				cin >> ndx;
 				ndx--;
 				for (int i = ndx; i < stockNum - 1; i++) {
@@ -64,9 +64,9 @@ public:
 
 	void Show() {
 		SetTotal();
-		cout <<  "Íàçâàíèå êîìïàíèè: " << companyName << endl;
-		cout <<  "Îáùåå êîëè÷åñòâî àêöèé: " << stockNum << endl;
-		cout << "Îáùàÿ ñòîèìîñòü âñåõ àêöèé: " << allStockCost << endl;
+		cout <<  "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¸: " << companyName << endl;
+		cout <<  "ÐžÐ±Ñ‰ÐµÐµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð°ÐºÑ†Ð¸Ð¹: " << stockNum << endl;
+		cout << "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð²ÑÐµÑ… Ð°ÐºÑ†Ð¸Ð¹: " << allStockCost << endl;
 	}
 	~Stock() {};
 private:

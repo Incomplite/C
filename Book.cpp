@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -60,11 +60,11 @@ public:
 	}
 
 	void Show(){
-		cout << "ФИО автора: " << Author << endl;
-		cout << "Название книги: " << NameBook << endl;
-		cout << "Издательство: " << PublishingHouse << endl;
-		cout << "Год выпуска: " << Year << endl;
-		cout << "Количество страниц: " << KolPages << endl;
+		cout << "Р¤РРћ Р°РІС‚РѕСЂР°: " << Author << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ РєРЅРёРіРё: " << NameBook << endl;
+		cout << "РР·РґР°С‚РµР»СЊСЃС‚РІРѕ: " << PublishingHouse << endl;
+		cout << "Р“РѕРґ РІС‹РїСѓСЃРєР°: " << Year << endl;
+		cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†: " << KolPages << endl;
 	}
 	
 };
@@ -74,10 +74,10 @@ int main() {
 
 	vector<Book> bookArray;
 
-	Book first("Артасов Б.Г.", "War or not", "Phoenix", 2010, 572);
-	Book second("Джиганов А.С.", "Magazine baltika", "Rostzdat", 1982, 628);
-	Book third("Клиенко Ц.Б.", "Danichka na prirode", "Evropa", 2001, 435);
-	Book fourth("Аладин Х.В.", "Shiish", "Fargus", 1995, 1076);
+	Book first("РђСЂС‚Р°СЃРѕРІ Р‘.Р“.", "War or not", "Phoenix", 2010, 572);
+	Book second("Р”Р¶РёРіР°РЅРѕРІ Рђ.РЎ.", "Magazine baltika", "Rostzdat", 1982, 628);
+	Book third("РљР»РёРµРЅРєРѕ Р¦.Р‘.", "Danichka na prirode", "Evropa", 2001, 435);
+	Book fourth("РђР»Р°РґРёРЅ РҐ.Р’.", "Shiish", "Fargus", 1995, 1076);
 
 	bookArray.push_back(first);
 	bookArray.push_back(second);
@@ -85,7 +85,7 @@ int main() {
 	bookArray.push_back(fourth);
 
 	for (int i = 0; i < bookArray.size(); i++) {
-		if (bookArray[i].GetAuthor() == "Артасов Б.Г.") {
+		if (bookArray[i].GetAuthor() == "РђСЂС‚Р°СЃРѕРІ Р‘.Р“.") {
 			bookArray[i].Show();
 			cout << endl;
 		}
