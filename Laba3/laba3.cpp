@@ -1,4 +1,4 @@
-#include <iostream>;
+ï»¿#include <iostream>;
 
 using namespace std;
 
@@ -57,11 +57,11 @@ Goods tovar(Goods s) {
 
 int main(void) {
     setlocale(LC_ALL, "RU");
-    cout << "Âõîä â ôóíêöèþ main()" << endl;
+    cout << "Ð’Ñ…Ð¾Ð´ Ð² Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ main()" << endl;
     Goods a;
     Goods b;
     tovar(a);
     tovar(b);
 
-    cout << "Âûõîä èç ôóíêöèè main()" << endl;
+    cout << "Ð’Ñ‹Ñ…Ð¾Ð´ Ð¸Ð· Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ main()" << endl;
 }
